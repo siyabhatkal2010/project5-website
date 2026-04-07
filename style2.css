@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Poppins",sans-serif ;
+    background:black;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: #d4d4d4;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+#current-time {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+}
+nav, .nav-links{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 16vh;
+    gap:1rem;
+    list-style: none;
+  
+
+}
+nav, .page-links{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    gap:1rem;
+    list-style: none;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+a:hover{
+    color: gray;
+    text-decoration: underline;
+    
+    text-decoration-color: rgb(181,181,181);
+}
+
+
+h1{
+    color: #d4d4d4;
+    line-height: 1.6;
+    margin-bottom: 2em;
+
+}
+.time{
+    color: white;
+}
+section{
+    padding-top: 2vh;
+    height: 100vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 60vh;
+    align-items: center;
+    flex-wrap: wrap;  
+   
+}
+#profile div{
+    gap:0.5rem;
+}
+.picture img{
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    margin: 0;
+}
+.text{
+    align-self:center ;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+.text p{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.p1{
+    text-align: center;
+}
+#AboutMe, #Hobbies, #Passion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about_me_text, .hobbies_text, .passion_text{
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1;
+
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+
+}
+.about_me_image{
+    display: flex;
+    gap: 4rem;
+
+}
+.about_me_image img{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 1rem;
+
+}
+
+.hobbies_image{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+.hob_image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+#Contact {
+
+
+  background: darkolivegreen;
+  color: white;
+  text-align: center;
+  padding: 50px 0 100px;
+}
+#Contact .contact-container{
+    display: flex;
+    gap:48px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.section-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info-list i {
+    font-size: 16px;
+    color: #ff5722;
+    min-width: 24px;
+    text-align: center;
+}
+
+
+.contact-info-list p {
+    margin: 0;
+    color: black;
+}
+
+
+.contact-info-list a {
+    text-decoration: none;
+    color: #ff5722;
+    font-weight: 500;
+}
+
+.contact-info-list a:hover {
+    text-decoration: underline;
+}
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-input {
+  width: 90%;
+  height: 50px;
+  padding: 0 12px;
+  margin-bottom: 16px;
+  background: white;
+  border: 1px solid ;
+  font-size: 16px;
+  outline: none;
+  
+}
+
+
+.contact-form textarea.form-input {
+  height: 120px;
+  padding: 12px;
+  resize: vertical;
+}
+
+
+.contact-form .form-input:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+
+
+.submit-button {
+  padding: 12px 26px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius:16px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.submit-button:hover {
+  background: white;
+}
+
+section #Physics1,#Physics2,#LFT{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+.phy_text, .phy1_text, .lft_text,.phy_image, .phy2_image, .lft_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex: 1; 
+    max-width: 100%;
+    text-align: center; 
+}
+.phy_image img, .phy2_image img,.lft_image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.project{
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project ul{
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.6;
+    text-align: left;
+}
+h2 .yo{
+    text-align: center;
+    margin: 30px 0 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+h1 .yo{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: white;
+}
+.quali{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+h2 .area{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+.drive{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    color: white;
+}
+.para{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+.para ul{
+    list-style: disc;
+    padding-left: 40px;
+    line-height: 1.6;
+    color: white;
+}
+.para p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+}
+.toggle-btn {
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

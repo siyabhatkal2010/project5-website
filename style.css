@@ -1,0 +1,254 @@
+
+/*Styling the html file - comment = ctrl+C */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:"Poppins",sans-serif ;
+    background: #fdd9b5;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85,85,85);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+a, .btn{
+    transition: all 300ms ease;
+
+}
+/*Adjust view width*/
+/*17vh takes 17% of the whole screen*/
+
+nav, .nav-links{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    gap:2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.page-links{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 9vh;
+    gap:1rem;
+    list-style: none;
+    font-size: .75rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+
+.logo:hover{
+    cursor: default;
+}
+
+section{
+    padding-top: 4vh;
+    height: 100vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    min-height: 80vh;
+    align-items: center;
+}
+.picture img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+.text{
+    align-self:center ;
+    text-align: center;
+
+}
+.text p{
+    font-weight: 600;
+}
+
+.p1{
+    text-align: center;
+}
+#socials{
+    margin-top: 1rem;
+}
+#socials .icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: tranform 0.3s;
+}
+#socials .icon:hover{
+    transform: scale(1.1);
+}
+#AboutMe, #Hobbies, #Passion, #Volunteer, #Volunteer1, #Volunteer2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about_me_text, .hobbies_text, .passion_text, .phy_text, .phy1_text, .lft_text{
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.about_me_image, .hobbies_image{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+
+
+.about_image, .hob_image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.phy_image, .phy2_image, .lft_image {
+  flex: 1 1 ;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.phy_image img, .phy2_image img, .lft_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+#Contact {
+  background: grey;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.toggle-btn {
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.project{
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project ul{
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.6;
+    text-align: left;
+}
+h2 .yo{
+    text-align: center;
+    margin: 30px 0 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+h1 .yo{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: white;
+}
+.quali{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+h2 .area{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+.drive{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    color: white;
+}
+.para{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+.para ul{
+    list-style: disc;
+    padding-left: 40px;
+    line-height: 1.6;
+    color: white;
+}
+.para p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+
+
+
+
+
